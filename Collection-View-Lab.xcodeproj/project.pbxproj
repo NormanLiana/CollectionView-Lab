@@ -13,6 +13,7 @@
 		A52049E7233D6A68000EF956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52049E5233D6A68000EF956 /* LaunchScreen.storyboard */; };
 		A52049F2233D6A68000EF956 /* Collection_View_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52049F1233D6A68000EF956 /* Collection_View_LabTests.swift */; };
 		A5204A2B233E8FEC000EF956 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A2A233E8FEC000EF956 /* CountryViewController.swift */; };
+		A5204A2F234000A0000EF956 /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A2E234000A0000EF956 /* CountryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A52049F1233D6A68000EF956 /* Collection_View_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_View_LabTests.swift; sourceTree = "<group>"; };
 		A52049F3233D6A68000EF956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5204A2A233E8FEC000EF956 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		A5204A2E234000A0000EF956 /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		A52049DB233D6A66000EF956 /* Collection-View-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				A5204A2E234000A0000EF956 /* CountryCollectionViewCell.swift */,
 				A5204A2A233E8FEC000EF956 /* CountryViewController.swift */,
 				A52049DC233D6A66000EF956 /* AppDelegate.swift */,
 				A52049E0233D6A66000EF956 /* Main.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52049DD233D6A66000EF956 /* AppDelegate.swift in Sources */,
+				A5204A2F234000A0000EF956 /* CountryCollectionViewCell.swift in Sources */,
 				A5204A2B233E8FEC000EF956 /* CountryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
