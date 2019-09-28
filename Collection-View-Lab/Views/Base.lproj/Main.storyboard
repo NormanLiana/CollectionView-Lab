@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Country View Controller-->
         <scene sceneID="csw-PZ-uHi">
             <objects>
-                <viewController id="Uxi-UB-ysx" sceneMemberID="viewController">
+                <viewController id="Uxi-UB-ysx" customClass="CountryViewController" customModule="Collection_View_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zwf-9P-xqs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +82,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Kt-5J-ky3"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionViewOutlet" destination="a9z-TY-ViO" id="vAH-Kk-wfy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mo-Uv-7u6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

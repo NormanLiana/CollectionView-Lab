@@ -11,7 +11,7 @@ import UIKit
 class CountryViewController: UIViewController {
     
     // MARK: Outlets
-    
+    @IBOutlet weak var collectionViewOutlet: UICollectionView!
     
     
     
