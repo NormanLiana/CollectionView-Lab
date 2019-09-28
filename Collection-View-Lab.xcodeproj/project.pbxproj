@@ -14,6 +14,7 @@
 		A52049F2233D6A68000EF956 /* Collection_View_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52049F1233D6A68000EF956 /* Collection_View_LabTests.swift */; };
 		A5204A2B233E8FEC000EF956 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A2A233E8FEC000EF956 /* CountryViewController.swift */; };
 		A5204A2F234000A0000EF956 /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A2E234000A0000EF956 /* CountryCollectionViewCell.swift */; };
+		A5204A352340041D000EF956 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A342340041D000EF956 /* CountryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A52049F3233D6A68000EF956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5204A2A233E8FEC000EF956 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		A5204A2E234000A0000EF956 /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5204A342340041D000EF956 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A52049DB233D6A66000EF956 /* Collection-View-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				A5204A362340042C000EF956 /* Models */,
 				A5204A312340016A000EF956 /* Controllers */,
 				A5204A302340014A000EF956 /* Views */,
 				A52049E3233D6A68000EF956 /* Assets.xcassets */,
@@ -113,6 +116,14 @@
 				A5204A2A233E8FEC000EF956 /* CountryViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A5204A362340042C000EF956 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5204A342340041D000EF956 /* CountryModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			files = (
 				A52049DD233D6A66000EF956 /* AppDelegate.swift in Sources */,
 				A5204A2F234000A0000EF956 /* CountryCollectionViewCell.swift in Sources */,
+				A5204A352340041D000EF956 /* CountryModel.swift in Sources */,
 				A5204A2B233E8FEC000EF956 /* CountryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
