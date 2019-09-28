@@ -66,6 +66,12 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="countryCapitalOutlet" destination="Xga-9n-wDQ" id="4lD-gC-2FP"/>
+                                            <outlet property="countryNameOutlet" destination="lYd-Cb-Js1" id="YDv-RO-KxX"/>
+                                            <outlet property="countryPopulationOutlet" destination="6gr-Ut-w4q" id="UK7-al-cbe"/>
+                                            <outlet property="flagImageOutlet" destination="WdQ-1A-sZu" id="Tah-ko-ooZ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

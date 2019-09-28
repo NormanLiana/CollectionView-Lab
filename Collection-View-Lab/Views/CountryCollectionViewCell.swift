@@ -10,4 +10,9 @@ import UIKit
 
 class CountryCollectionViewCell: UICollectionViewCell {
     
+    // MARK: Outlets
+    @IBOutlet weak var flagImageOutlet: UIImageView!
+    @IBOutlet weak var countryNameOutlet: UILabel!
+    @IBOutlet weak var countryCapitalOutlet: UILabel!
+    @IBOutlet weak var countryPopulationOutlet: UILabel!
 }

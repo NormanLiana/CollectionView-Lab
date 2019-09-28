@@ -12,10 +12,7 @@ class CountryViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var collectionViewOutlet: UICollectionView!
-    
-    
-    
-    
+
     // MARK: Properties
     
     // MARK: Lifecycle Methods
