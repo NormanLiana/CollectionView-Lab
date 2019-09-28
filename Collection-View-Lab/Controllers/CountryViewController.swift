@@ -14,14 +14,58 @@ class CountryViewController: UIViewController {
     @IBOutlet weak var collectionViewOutlet: UICollectionView!
 
     // MARK: Properties
+    var countries = [Country]() {
+        didSet {
+            collectionViewOutlet.reloadData()
+        }
+    }
     
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionViewOutlet.dataSource = self
+        collectionViewOutlet.delegate = self
+        loadData()
     }
     
     // MARK: Private Methods
-    
+    private func loadData() {
+        CountryAPIManager.shared.getCountries { (result) in
+            switch result {
+            case .success(let countriesFromOnline):
+                self.countries = countriesFromOnline
+            case .failure(let error):
+                print(error)
+                
+            }
+        }
+    }
 }
 
 // MARK: Extensions
+extension CountryViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return countries.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionViewOutlet.dequeueReusableCell(withReuseIdentifier: "countryCell", for: indexPath) as? CountryCollectionViewCell {
+            let country = countries[indexPath.row]
+            cell.countryNameOutlet.text = country.name
+            cell.countryCapitalOutlet.text = country.capital
+            cell.countryPopulationOutlet.text = country.population?.description
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    
+}
+
+extension CountryViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150, height: 150)
+    }
+}
+
+extension CountryViewController: UICollectionViewDelegate {}

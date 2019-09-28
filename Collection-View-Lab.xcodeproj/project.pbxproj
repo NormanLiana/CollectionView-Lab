@@ -17,6 +17,7 @@
 		A5204A352340041D000EF956 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A342340041D000EF956 /* CountryModel.swift */; };
 		A5204A3823400549000EF956 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A3723400549000EF956 /* NetworkManager.swift */; };
 		A5204A3B234005C7000EF956 /* AppErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A3A234005C7000EF956 /* AppErrorHandler.swift */; };
+		A5204A3D234006D9000EF956 /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A3C234006D9000EF956 /* CountryAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A5204A342340041D000EF956 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		A5204A3723400549000EF956 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A5204A3A234005C7000EF956 /* AppErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorHandler.swift; sourceTree = "<group>"; };
+		A5204A3C234006D9000EF956 /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				A5204A3723400549000EF956 /* NetworkManager.swift */,
 				A5204A3A234005C7000EF956 /* AppErrorHandler.swift */,
+				A5204A3C234006D9000EF956 /* CountryAPIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52049DD233D6A66000EF956 /* AppDelegate.swift in Sources */,
+				A5204A3D234006D9000EF956 /* CountryAPIClient.swift in Sources */,
 				A5204A2F234000A0000EF956 /* CountryCollectionViewCell.swift in Sources */,
 				A5204A3823400549000EF956 /* NetworkManager.swift in Sources */,
 				A5204A3B234005C7000EF956 /* AppErrorHandler.swift in Sources */,
