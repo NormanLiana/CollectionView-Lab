@@ -79,11 +79,10 @@
 		A52049DB233D6A66000EF956 /* Collection-View-Lab */ = {
 			isa = PBXGroup;
 			children = (
-				A5204A2E234000A0000EF956 /* CountryCollectionViewCell.swift */,
-				A5204A2A233E8FEC000EF956 /* CountryViewController.swift */,
-				A52049DC233D6A66000EF956 /* AppDelegate.swift */,
-				A52049E0233D6A66000EF956 /* Main.storyboard */,
+				A5204A312340016A000EF956 /* Controllers */,
+				A5204A302340014A000EF956 /* Views */,
 				A52049E3233D6A68000EF956 /* Assets.xcassets */,
+				A52049DC233D6A66000EF956 /* AppDelegate.swift */,
 				A52049E5233D6A68000EF956 /* LaunchScreen.storyboard */,
 				A52049E8233D6A68000EF956 /* Info.plist */,
 			);
@@ -97,6 +96,23 @@
 				A52049F3233D6A68000EF956 /* Info.plist */,
 			);
 			path = "Collection-View-LabTests";
+			sourceTree = "<group>";
+		};
+		A5204A302340014A000EF956 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A52049E0233D6A66000EF956 /* Main.storyboard */,
+				A5204A2E234000A0000EF956 /* CountryCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5204A312340016A000EF956 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5204A2A233E8FEC000EF956 /* CountryViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
