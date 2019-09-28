@@ -9,9 +9,22 @@
 import UIKit
 
 class CountryViewController: UIViewController {
-
+    
+    // MARK: Outlets
+    
+    
+    
+    
+    
+    // MARK: Properties
+    
+    // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    // MARK: Private Methods
+    
 }
+
+// MARK: Extensions
