@@ -54,6 +54,18 @@ extension CountryViewController: UICollectionViewDataSource {
             cell.countryNameOutlet.text = country.name
             cell.countryCapitalOutlet.text = country.capital
             cell.countryPopulationOutlet.text = country.population?.description
+            if let unwrappedCountryCode = country.alpha2Code {
+                ImageManager.shared.getImage(countryCode: unwrappedCountryCode) { (result) in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .success(let imageFromOnline):
+                            cell.flagImageOutlet.image = imageFromOnline
+                        case .failure(let error):
+                            print(error)
+                        }
+                    }
+                }
+            }
             
             return cell
         }

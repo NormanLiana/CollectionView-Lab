@@ -12,14 +12,13 @@ import UIKit
 class ImageManager {
     
     // MARK: - Static Properties
-    
     static let shared = ImageManager()
     
     // MARK: - Instance Methods
-    
-    func getImage(urlStr: String, completionHandler: @escaping (Result<UIImage, AppError>) -> ()) {
+    func getImage(countryCode: String, completionHandler: @escaping (Result<UIImage, AppError>) -> ()) {
+        let urlString = "https://www.countryflags.io/\(countryCode.lowercased())/shiny/64.png"
         
-        guard let url = URL(string: urlStr) else {
+        guard let url = URL(string: urlString) else {
             completionHandler(.failure(.badURL))
             return
         }
