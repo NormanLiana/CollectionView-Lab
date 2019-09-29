@@ -54,6 +54,7 @@ extension CountryViewController: UICollectionViewDataSource {
             cell.countryNameOutlet.text = country.name
             cell.countryCapitalOutlet.text = country.capital
             cell.countryPopulationOutlet.text = country.population?.description
+            
             return cell
         }
         return UICollectionViewCell()
