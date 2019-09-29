@@ -14,7 +14,7 @@ class CountryAPIManager {
     static let shared = CountryAPIManager()
     
     func getCountries(completionHandler: @escaping (Result<[Country], AppError>) -> () ) {
-        let urlStr = "https://restcountries.eu/rest/v2/name/united"
+        let urlStr = "https://restcountries.eu/rest/v2/region/europe"
         
         guard let url = URL(string: urlStr) else {
             completionHandler(.failure(.badURL))
