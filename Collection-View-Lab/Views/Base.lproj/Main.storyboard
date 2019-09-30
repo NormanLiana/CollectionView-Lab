@@ -134,6 +134,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lyf-Jc-a4K"/>
                     </view>
+                    <connections>
+                        <outlet property="capitalLabel" destination="3DF-rv-wbW" id="Uxe-IL-2iF"/>
+                        <outlet property="imageOultet" destination="onC-fb-M93" id="lpn-Hu-R3E"/>
+                        <outlet property="nameLabel" destination="jiy-Rm-5Cb" id="vEG-cz-U58"/>
+                        <outlet property="populationLabel" destination="7nL-Nm-3ZJ" id="0hs-Xb-KAr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fei-Th-07r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
