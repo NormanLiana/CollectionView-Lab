@@ -22,8 +22,30 @@ class DetailCountryViewController: UIViewController {
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpViews()
+        loadImage()
     }
     
     // MARK: Private Methods
+    private func setUpViews() {
+        view.backgroundColor = .orange
+        nameLabel.text = country.name
+        capitalLabel.text = country.capital
+        populationLabel.text = country.population?.description
+    }
+    
+    private func loadImage() {
+        if let unwrappedCountryCode = country.alpha2Code {
+            ImageManager.shared.getImage(countryCode: unwrappedCountryCode) { (result) in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let imageFromOnline):
+                        self.imageOultet.image = imageFromOnline
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+            }
+        }
     }
 }
