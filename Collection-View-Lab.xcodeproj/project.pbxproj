@@ -19,6 +19,7 @@
 		A5204A3B234005C7000EF956 /* AppErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A3A234005C7000EF956 /* AppErrorHandler.swift */; };
 		A5204A3D234006D9000EF956 /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A3C234006D9000EF956 /* CountryAPIClient.swift */; };
 		A5204A3F23404967000EF956 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A3E23404967000EF956 /* ImageManager.swift */; };
+		A5204A4123405727000EF956 /* DetailCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A4023405727000EF956 /* DetailCountryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A5204A3A234005C7000EF956 /* AppErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorHandler.swift; sourceTree = "<group>"; };
 		A5204A3C234006D9000EF956 /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
 		A5204A3E23404967000EF956 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		A5204A4023405727000EF956 /* DetailCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A5204A2A233E8FEC000EF956 /* CountryViewController.swift */,
+				A5204A4023405727000EF956 /* DetailCountryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				A5204A3F23404967000EF956 /* ImageManager.swift in Sources */,
 				A5204A3823400549000EF956 /* NetworkManager.swift in Sources */,
 				A5204A3B234005C7000EF956 /* AppErrorHandler.swift in Sources */,
+				A5204A4123405727000EF956 /* DetailCountryViewController.swift in Sources */,
 				A5204A352340041D000EF956 /* CountryModel.swift in Sources */,
 				A5204A2B233E8FEC000EF956 /* CountryViewController.swift in Sources */,
 			);

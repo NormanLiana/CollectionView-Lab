@@ -51,6 +51,7 @@ extension CountryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionViewOutlet.dequeueReusableCell(withReuseIdentifier: "countryCell", for: indexPath) as? CountryCollectionViewCell {
             let country = countries[indexPath.row]
+            cell.backgroundColor = .green
             cell.countryNameOutlet.text = country.name
             cell.countryCapitalOutlet.text = country.capital
             cell.countryPopulationOutlet.text = country.population?.description
@@ -72,7 +73,11 @@ extension CountryViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVC = storyboard?.instantiateViewController(withIdentifier: "detailCountryVC") as! DetailCountryViewController
+        detailVC.country = countries[indexPath.row]
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 extension CountryViewController: UICollectionViewDelegateFlowLayout {
